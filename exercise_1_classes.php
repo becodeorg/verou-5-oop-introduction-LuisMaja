@@ -19,9 +19,9 @@ USE TYPEHINTING EVERYWHERE!
 class Beverage
 {
     // Properties with type hints
-    private string $color;
-    private float $price;
-    private string $temperature;
+    public string $color;
+    public float $price;
+    public string $temperature;
 
     // Constructor with default values and type hints
     public function __construct(string $color, float $price, string $temperature = 'cold')
@@ -35,12 +35,6 @@ class Beverage
     public function getInfo(): string
     {
         return "This beverage is {$this->temperature} and {$this->color}.";
-    }
-
-    // Getter method for temperature
-    public function getTemperature(): string
-    {
-        return $this->temperature;
     }
 }
 
